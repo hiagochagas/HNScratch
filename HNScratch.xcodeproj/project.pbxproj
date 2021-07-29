@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E055F0026B2C5C0002DBB3E /* HNScratch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E055EFE26B2C5C0002DBB3E /* HNScratch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E055F0A26B2C5F7002DBB3E /* ScratchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E055F0626B2C5F6002DBB3E /* ScratchView.h */; };
 		6E055F0B26B2C5F7002DBB3E /* ScratchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F0726B2C5F6002DBB3E /* ScratchView.m */; };
 		6E055F0C26B2C5F7002DBB3E /* ScratchableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F0826B2C5F6002DBB3E /* ScratchableView.m */; };
@@ -16,11 +15,37 @@
 		6E055F1A26B2CB88002DBB3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F1926B2CB88002DBB3E /* AppDelegate.m */; };
 		6E055F1D26B2CB88002DBB3E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F1C26B2CB88002DBB3E /* SceneDelegate.m */; };
 		6E055F2026B2CB88002DBB3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F1F26B2CB88002DBB3E /* ViewController.m */; };
-		6E055F2326B2CB88002DBB3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E055F2126B2CB88002DBB3E /* Main.storyboard */; };
 		6E055F2526B2CB89002DBB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E055F2426B2CB89002DBB3E /* Assets.xcassets */; };
 		6E055F2826B2CB89002DBB3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E055F2626B2CB89002DBB3E /* LaunchScreen.storyboard */; };
 		6E055F2B26B2CB89002DBB3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F2A26B2CB89002DBB3E /* main.m */; };
+		6E055F3026B2D020002DBB3E /* HNScratch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E055EFE26B2C5C0002DBB3E /* HNScratch.h */; };
+		6E055F3826B2D5EB002DBB3E /* HNScratch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E055EFB26B2C5C0002DBB3E /* HNScratch.framework */; };
+		6E055F3926B2D5EB002DBB3E /* HNScratch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E055EFB26B2C5C0002DBB3E /* HNScratch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E055F3A26B2D5EB002DBB3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E055EF226B2C5C0002DBB3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E055EFA26B2C5C0002DBB3E;
+			remoteInfo = HNScratch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E055F3C26B2D5EB002DBB3E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E055F3926B2D5EB002DBB3E /* HNScratch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6E055EFB26B2C5C0002DBB3E /* HNScratch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HNScratch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +63,6 @@
 		6E055F1C26B2CB88002DBB3E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		6E055F1E26B2CB88002DBB3E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6E055F1F26B2CB88002DBB3E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6E055F2226B2CB88002DBB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E055F2426B2CB89002DBB3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E055F2726B2CB89002DBB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E055F2926B2CB89002DBB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E055F3826B2D5EB002DBB3E /* HNScratch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +94,7 @@
 				6E055EFD26B2C5C0002DBB3E /* HNScratch */,
 				6E055F1726B2CB88002DBB3E /* HNScratchObjectiveC */,
 				6E055EFC26B2C5C0002DBB3E /* Products */,
+				6E055F3226B2D580002DBB3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,13 +130,19 @@
 				6E055F1C26B2CB88002DBB3E /* SceneDelegate.m */,
 				6E055F1E26B2CB88002DBB3E /* ViewController.h */,
 				6E055F1F26B2CB88002DBB3E /* ViewController.m */,
-				6E055F2126B2CB88002DBB3E /* Main.storyboard */,
 				6E055F2426B2CB89002DBB3E /* Assets.xcassets */,
 				6E055F2626B2CB89002DBB3E /* LaunchScreen.storyboard */,
 				6E055F2926B2CB89002DBB3E /* Info.plist */,
 				6E055F2A26B2CB89002DBB3E /* main.m */,
 			);
 			path = HNScratchObjectiveC;
+			sourceTree = "<group>";
+		};
+		6E055F3226B2D580002DBB3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,8 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E055F0D26B2C5F7002DBB3E /* ScratchableView.h in Headers */,
+				6E055F3026B2D020002DBB3E /* HNScratch.h in Headers */,
 				6E055F0A26B2C5F7002DBB3E /* ScratchView.h in Headers */,
-				6E055F0026B2C5C0002DBB3E /* HNScratch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,10 +186,12 @@
 				6E055F1226B2CB88002DBB3E /* Sources */,
 				6E055F1326B2CB88002DBB3E /* Frameworks */,
 				6E055F1426B2CB88002DBB3E /* Resources */,
+				6E055F3C26B2D5EB002DBB3E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6E055F3B26B2D5EB002DBB3E /* PBXTargetDependency */,
 			);
 			name = HNScratchObjectiveC;
 			productName = HNScratchObjectiveC;
@@ -213,7 +247,6 @@
 			files = (
 				6E055F2826B2CB89002DBB3E /* LaunchScreen.storyboard in Resources */,
 				6E055F2526B2CB89002DBB3E /* Assets.xcassets in Resources */,
-				6E055F2326B2CB88002DBB3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,15 +276,15 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		6E055F2126B2CB88002DBB3E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E055F2226B2CB88002DBB3E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		6E055F3B26B2D5EB002DBB3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E055EFA26B2C5C0002DBB3E /* HNScratch */;
+			targetProxy = 6E055F3A26B2D5EB002DBB3E /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		6E055F2626B2CB89002DBB3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

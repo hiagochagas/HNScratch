@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import "HNScratch.h"
 @interface ViewController ()
 
 @end
@@ -15,7 +15,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    CGFloat width = 20.0;
+    HNScratch *scratch1 = [HNScratch.new initWithImagesAndWidth:[UIImage imageNamed:@"background.jpg"]  scratchImage:[UIImage imageNamed:@"scratchable.jpg"] lineWidth: width];
+    ScratchView *scratchView = [scratch1 getScratch];
+    scratchView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview: scratchView];
+    [scratchView.widthAnchor constraintEqualToConstant:250].active = YES;
+    [scratchView.heightAnchor constraintEqualToConstant:250].active = YES;
+    [scratchView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor ].active = YES;
+    [scratchView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor ].active = YES;
 }
 
 
