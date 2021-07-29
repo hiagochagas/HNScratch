@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E055F0A26B2C5F7002DBB3E /* ScratchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E055F0626B2C5F6002DBB3E /* ScratchView.h */; };
+		6E055F0A26B2C5F7002DBB3E /* ScratchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E055F0626B2C5F6002DBB3E /* ScratchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E055F0B26B2C5F7002DBB3E /* ScratchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F0726B2C5F6002DBB3E /* ScratchView.m */; };
 		6E055F0C26B2C5F7002DBB3E /* ScratchableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F0826B2C5F6002DBB3E /* ScratchableView.m */; };
 		6E055F0D26B2C5F7002DBB3E /* ScratchableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E055F0926B2C5F6002DBB3E /* ScratchableView.h */; };
@@ -18,13 +18,27 @@
 		6E055F2526B2CB89002DBB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E055F2426B2CB89002DBB3E /* Assets.xcassets */; };
 		6E055F2826B2CB89002DBB3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E055F2626B2CB89002DBB3E /* LaunchScreen.storyboard */; };
 		6E055F2B26B2CB89002DBB3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F2A26B2CB89002DBB3E /* main.m */; };
-		6E055F3026B2D020002DBB3E /* HNScratch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E055EFE26B2C5C0002DBB3E /* HNScratch.h */; };
+		6E055F3026B2D020002DBB3E /* HNScratch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E055EFE26B2C5C0002DBB3E /* HNScratch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E055F3826B2D5EB002DBB3E /* HNScratch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E055EFB26B2C5C0002DBB3E /* HNScratch.framework */; };
 		6E055F3926B2D5EB002DBB3E /* HNScratch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E055EFB26B2C5C0002DBB3E /* HNScratch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E055F4426B2D6AC002DBB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F4326B2D6AC002DBB3E /* AppDelegate.swift */; };
+		6E055F4626B2D6AC002DBB3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F4526B2D6AC002DBB3E /* SceneDelegate.swift */; };
+		6E055F4826B2D6AC002DBB3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E055F4726B2D6AC002DBB3E /* ViewController.swift */; };
+		6E055F4D26B2D6AE002DBB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E055F4C26B2D6AE002DBB3E /* Assets.xcassets */; };
+		6E055F5026B2D6AE002DBB3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E055F4E26B2D6AE002DBB3E /* LaunchScreen.storyboard */; };
+		6E055F5526B2D790002DBB3E /* HNScratch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E055EFB26B2C5C0002DBB3E /* HNScratch.framework */; };
+		6E055F5626B2D790002DBB3E /* HNScratch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E055EFB26B2C5C0002DBB3E /* HNScratch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		6E055F3A26B2D5EB002DBB3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E055EF226B2C5C0002DBB3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E055EFA26B2C5C0002DBB3E;
+			remoteInfo = HNScratch;
+		};
+		6E055F5726B2D790002DBB3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6E055EF226B2C5C0002DBB3E /* Project object */;
 			proxyType = 1;
@@ -41,6 +55,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				6E055F3926B2D5EB002DBB3E /* HNScratch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E055F5926B2D790002DBB3E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E055F5626B2D790002DBB3E /* HNScratch.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +92,13 @@
 		6E055F2726B2CB89002DBB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E055F2926B2CB89002DBB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E055F2A26B2CB89002DBB3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E055F4126B2D6AC002DBB3E /* HNScratchSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNScratchSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E055F4326B2D6AC002DBB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E055F4526B2D6AC002DBB3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6E055F4726B2D6AC002DBB3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E055F4C26B2D6AE002DBB3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E055F4F26B2D6AE002DBB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E055F5126B2D6AE002DBB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +117,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E055F3E26B2D6AC002DBB3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E055F5526B2D790002DBB3E /* HNScratch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,6 +133,7 @@
 			children = (
 				6E055EFD26B2C5C0002DBB3E /* HNScratch */,
 				6E055F1726B2CB88002DBB3E /* HNScratchObjectiveC */,
+				6E055F4226B2D6AC002DBB3E /* HNScratchSwift */,
 				6E055EFC26B2C5C0002DBB3E /* Products */,
 				6E055F3226B2D580002DBB3E /* Frameworks */,
 			);
@@ -103,6 +144,7 @@
 			children = (
 				6E055EFB26B2C5C0002DBB3E /* HNScratch.framework */,
 				6E055F1626B2CB88002DBB3E /* HNScratchObjectiveC.app */,
+				6E055F4126B2D6AC002DBB3E /* HNScratchSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +185,19 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E055F4226B2D6AC002DBB3E /* HNScratchSwift */ = {
+			isa = PBXGroup;
+			children = (
+				6E055F4326B2D6AC002DBB3E /* AppDelegate.swift */,
+				6E055F4526B2D6AC002DBB3E /* SceneDelegate.swift */,
+				6E055F4726B2D6AC002DBB3E /* ViewController.swift */,
+				6E055F4C26B2D6AE002DBB3E /* Assets.xcassets */,
+				6E055F4E26B2D6AE002DBB3E /* LaunchScreen.storyboard */,
+				6E055F5126B2D6AE002DBB3E /* Info.plist */,
+			);
+			path = HNScratchSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,18 +253,41 @@
 			productReference = 6E055F1626B2CB88002DBB3E /* HNScratchObjectiveC.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6E055F4026B2D6AC002DBB3E /* HNScratchSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E055F5226B2D6AE002DBB3E /* Build configuration list for PBXNativeTarget "HNScratchSwift" */;
+			buildPhases = (
+				6E055F3D26B2D6AC002DBB3E /* Sources */,
+				6E055F3E26B2D6AC002DBB3E /* Frameworks */,
+				6E055F3F26B2D6AC002DBB3E /* Resources */,
+				6E055F5926B2D790002DBB3E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E055F5826B2D790002DBB3E /* PBXTargetDependency */,
+			);
+			name = HNScratchSwift;
+			productName = HNScratchSwift;
+			productReference = 6E055F4126B2D6AC002DBB3E /* HNScratchSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6E055EF226B2C5C0002DBB3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					6E055EFA26B2C5C0002DBB3E = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					6E055F1526B2CB88002DBB3E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					6E055F4026B2D6AC002DBB3E = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
@@ -229,6 +307,7 @@
 			targets = (
 				6E055EFA26B2C5C0002DBB3E /* HNScratch */,
 				6E055F1526B2CB88002DBB3E /* HNScratchObjectiveC */,
+				6E055F4026B2D6AC002DBB3E /* HNScratchSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +326,15 @@
 			files = (
 				6E055F2826B2CB89002DBB3E /* LaunchScreen.storyboard in Resources */,
 				6E055F2526B2CB89002DBB3E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E055F3F26B2D6AC002DBB3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E055F5026B2D6AE002DBB3E /* LaunchScreen.storyboard in Resources */,
+				6E055F4D26B2D6AE002DBB3E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +362,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E055F3D26B2D6AC002DBB3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E055F4826B2D6AC002DBB3E /* ViewController.swift in Sources */,
+				6E055F4426B2D6AC002DBB3E /* AppDelegate.swift in Sources */,
+				6E055F4626B2D6AC002DBB3E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -282,6 +380,11 @@
 			target = 6E055EFA26B2C5C0002DBB3E /* HNScratch */;
 			targetProxy = 6E055F3A26B2D5EB002DBB3E /* PBXContainerItemProxy */;
 		};
+		6E055F5826B2D790002DBB3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E055EFA26B2C5C0002DBB3E /* HNScratch */;
+			targetProxy = 6E055F5726B2D790002DBB3E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -289,6 +392,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				6E055F2726B2CB89002DBB3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6E055F4E26B2D6AE002DBB3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E055F4F26B2D6AE002DBB3E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -499,6 +610,48 @@
 			};
 			name = Release;
 		};
+		6E055F5326B2D6AE002DBB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSANZ76H3Y;
+				INFOPLIST_FILE = HNScratchSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hn.HNScratchSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E055F5426B2D6AE002DBB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSANZ76H3Y;
+				INFOPLIST_FILE = HNScratchSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hn.HNScratchSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -525,6 +678,15 @@
 			buildConfigurations = (
 				6E055F2D26B2CB89002DBB3E /* Debug */,
 				6E055F2E26B2CB89002DBB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E055F5226B2D6AE002DBB3E /* Build configuration list for PBXNativeTarget "HNScratchSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E055F5326B2D6AE002DBB3E /* Debug */,
+				6E055F5426B2D6AE002DBB3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
