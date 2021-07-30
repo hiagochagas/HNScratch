@@ -1,6 +1,6 @@
 # HNScratch
 
-HNScratch is a ObjectiveC framework that makes it easier to make scratchable views and it works both in ObjectiveC or Swift projects.
+HNScratch is an ObjectiveC framework that makes it easier to make scratchable views and it works both in ObjectiveC or Swift projects.
 
 ## Example
 
