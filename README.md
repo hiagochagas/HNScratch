@@ -10,8 +10,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 * iOS 14.5+
-* Swift 5
-* Objective-C
+* Swift 5 or Objective-C
 
 ## Installation
 
@@ -21,6 +20,45 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'HNScratch'
 ```
+## How to use
+
+**Important things**
+- ```HNScratch``` is the class that you are going to use 
+- ```backgroundImage``` is the ```UIImage``` that you want to show when you scratch the view
+- ```scratchableImage``` is the ```UIImage``` that you want to be scratched
+- ```lineWidth``` is the ```CGFloat``` size of the scratch
+
+
+**Creating instances**
+
+* Swift
+
+```swift
+let scratch = HNScratch(imagesAndWidth: backgroundImage, scratch: scratchableImage, lineWidth: lineWidth)
+```
+
+* Objective-C
+
+```objc
+HNScratch *scratch = [HNScratch.new initWithImagesAndWidth:backgroundImage  scratchImage:scratchableImage lineWidth: lineWidth];
+```
+
+
+**Setting-up the scratchView**
+
+* Swift
+```swift
+let scratchView = scratch?.getScratch()
+```
+
+* Objective-C
+
+```objc
+UIView *scratchView = [scratch getScratch];
+```
+
+Now you can use the ```scratchView``` as you want. 
+
 
 ## Authors
 
