@@ -15,11 +15,29 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Installation
 
 HNScratch is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+it you can run the following line on terminal:
+
+```ruby
+sudo gem install cocoapods
+```
+
+After that, you will need a Podfile in your project. Go to your project directory and run:
+
+```ruby
+pod init
+```
+Add HNScratch to your project dependencies by simply adding the following line to your Podfile:
 
 ```ruby
 pod 'HNScratch'
 ```
+At last, run:
+
+```ruby
+pod install
+```
+
+
 ## How to use
 
 **Important things**
